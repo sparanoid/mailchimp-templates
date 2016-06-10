@@ -1,0 +1,83 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sparanoid Newsletter Template for MailChimp</title>
+<style>
+  *,
+  *:before,
+  *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 100%;
+    text-size-adjust: none;
+    text-rendering: optimizelegibility;
+    background: #fff;
+  }
+
+  body {
+    font-family: 'Helvetica Neue', 'Hiragino Sans GB', Arial, sans-serif;
+    font-size: 18px;
+    padding: 36px;
+  }
+
+  a {
+    color: #a212d1;
+  }
+
+  p {
+    margin-bottom: 1.6rem;
+    line-height: 1.6;
+  }
+
+  .list {
+    margin-bottom: 1.8rem;
+    color: #eee;
+  }
+    .list li {
+      line-height: 1.6;
+    }
+
+  .footer {
+    font-size: 60%;
+    text-transform: lowercase;
+  }
+    .footer li {
+      display: inline;
+    }
+      .footer li:after {
+        padding: 0 .6vw;
+        content: ' / ';
+        opacity: .3;
+      }
+        .footer li:last-child:after {
+          content: none
+        }
+
+  .credit img {
+    display: none;
+  }
+</style>
+
+<p>
+  Updates from *|RSSFEED:TITLE|*<br>
+  <small>*|RSSFEED:DATE|* edition</small>
+</p>
+
+<ul class="list">
+  *|RSSITEMS:|*
+  <li><a href="*|RSSITEM:URL|*" target="_blank">*|RSSITEM:TITLE|*</a></li>
+  *|END:RSSITEMS|*
+</ul>
+
+<ul class="footer">
+  <li>&copy; <a href="*|RSSFEED:URL|*" target="_blank">*|LIST:COMPANY|*</a></li>
+  <li><a href="*|UNSUB|*" target="_blank">Unsubscribe</a></li>
+  <li><a href="*|UPDATE_PROFILE|*" target="_blank">Update Subscription</a></li>
+  <li><a href="http://eepurl.com/b5g7Ar" target="_blank">MailChimp</a></li>
+</ul>
+
+<div class="credit">*|REWARDS|*</div>
