@@ -28,37 +28,34 @@
     color: #a212d1;
   }
 
-  p {
+  p,
+  ul {
     margin-bottom: 1.6rem;
     line-height: 1.6;
   }
 
   .list {
-    margin-bottom: 1.8rem;
     color: #eee;
   }
-    .list li {
-      line-height: 1.6;
-    }
 
   .footer {
+    color: #ccc;
     font-size: 60%;
     text-transform: lowercase;
   }
     .footer li {
       display: inline;
     }
-      .footer li:after {
-        padding: 0 .6vw;
-        content: ' / ';
-        opacity: .3;
-      }
-        .footer li:last-child:after {
-          content: none
-        }
 
-  .credit img {
-    display: none;
+    .footer a {
+      color: #999;
+      text-decoration: none;
+    }
+
+  .credit {
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
 </style>
 
@@ -74,10 +71,9 @@
 </ul>
 
 <ul class="footer">
-  <li>&copy; <a href="*|RSSFEED:URL|*" target="_blank">*|LIST:COMPANY|*</a></li>
-  <li><a href="*|UNSUB|*" target="_blank">Unsubscribe</a></li>
+  <li>&copy; <a href="*|RSSFEED:URL|*" target="_blank">*|LIST:COMPANY|*</a> / </li>
+  <li><a href="*|UNSUB|*" target="_blank">Unsubscribe</a> / </li>
   <li><a href="*|UPDATE_PROFILE|*" target="_blank">Update Subscription</a></li>
-  <li><a href="http://eepurl.com/b5g7Ar" target="_blank">MailChimp</a></li>
 </ul>
 
 <div class="credit">*|REWARDS|*</div>
